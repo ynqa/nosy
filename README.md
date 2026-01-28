@@ -87,7 +87,11 @@ nosy extract <INPUT> -o <OUTPUT> [OPTIONS]
 Generate shell completion scripts.
 
 ```bash
-nosy completion zsh
+# Enable zsh completion for the current shell
+source <(nosy completion zsh)
+
+# Persist by appending to ~/.zshrc
+echo 'source <(nosy completion zsh)' >> ~/.zshrc
 ```
 
 ### download-whisper
