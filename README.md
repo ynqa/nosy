@@ -26,9 +26,7 @@ and summarizes it using LLMs. It supports multiple formats including HTML, PDF, 
 ### shell
 
 ```bash
-NOSY_VERSION=v0.1.0
-
-curl --proto '=https' --tlsv1.2 -LsSf https://github.com/ynqa/homebrew-tap/releases/download/nosy-${NOSY_VERSION}/install.sh | sh
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/ynqa/nosy/releases/download/v0.1.0/nosy-installer.sh | sh
 ```
 
 ### Homebrew
