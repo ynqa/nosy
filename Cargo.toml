@@ -14,7 +14,7 @@ async-trait = "0.1.89"
 clap = { version = "4.5.55", features = ["derive"] }
 clap_complete = "4.5.65"
 env_logger = "0.11.7"
-genai = "0.5.1"
+genai = "0.5.2"
 handlebars = "6.4.0"
 headless_chrome = { version = "1.0.20", features = ["fetch"] }
 indicatif = "0.18.3"
