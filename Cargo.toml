@@ -7,6 +7,11 @@ description = "nosy: various contents summarization tool powered by artificial i
 repository = "https://github.com/ynqa/nosy"
 license = "MIT"
 readme = "README.md"
+autobins = false
+
+[[bin]]
+name = "nosy"
+path = "src/main.rs"
 
 [dependencies]
 anyhow = "1.0.100"
