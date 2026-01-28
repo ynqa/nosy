@@ -26,13 +26,13 @@ and summarizes it using LLMs. It supports multiple formats including HTML, PDF, 
 ### shell
 
 ```bash
-curl --proto '=https' --tlsv1.2 -LsSf https://github.com/ynqa/nosy/releases/download/v0.1.0/nosy-installer.sh | sh
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/ynqa/nosy/releases/download/v0.1.0/nosy-cli-installer.sh | sh
 ```
 
 ### Homebrew
 
 ```bash
-brew install ynqa/tap/nosy
+brew install ynqa/tap/nosy-cli
 ```
 
 ### Cargo
