@@ -1972,7 +1972,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "nosy"
+name = "nosy-cli"
 version = "0.1.0"
 dependencies = [
  "anyhow",
