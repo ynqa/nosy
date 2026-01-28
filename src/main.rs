@@ -396,6 +396,8 @@ async fn fetch(
     }
 
     let fetcher: Box<dyn Fetcher> = match scheme {
+        // TODO: file:// inputs are URL-formatted, so normalize to a filesystem path before PathBuf.
+        // e.g. file:///path/to/file must become /path/to/file or it won't resolve on disk.
         InputScheme::File => return Ok(uri.into()),
         InputScheme::Http => Box::new(HttpFetcher::new(&args.http_opts)),
         _ => {

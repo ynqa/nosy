@@ -70,6 +70,7 @@ impl<'a> HttpFetcher<'a> {
 
     /// Fetch content using HTTP GET
     async fn fetch_reqwest(&self, uri: &str) -> anyhow::Result<String> {
+        // TODO: `res.text()` corrupts binary inputs (PDF/docx/audio); switch to saving raw bytes.
         let client = reqwest::Client::builder()
             .build()
             .context("failed to build reqwest client")?;
