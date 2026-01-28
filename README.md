@@ -38,7 +38,7 @@ brew install ynqa/tap/nosy
 ### Cargo
 
 ```bash
-cargo install nosy
+cargo install nosy-cli
 
 # Or from source (at the repository root)
 cargo install --path .
