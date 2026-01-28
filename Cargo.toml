@@ -1,0 +1,38 @@
+[package]
+name = "nosy"
+version = "0.1.0"
+authors = ["ynqa <un.pensiero.vano@gmail.com>"]
+edition = "2024"
+description = "nosy: various contents summarization tool powered by artificial intelligence"
+repository = "https://github.com/ynqa/nosy"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+anyhow = "1.0.100"
+async-trait = "0.1.89"
+clap = { version = "4.5.55", features = ["derive"] }
+clap_complete = "4.5.65"
+env_logger = "0.11.7"
+genai = "0.5.1"
+handlebars = "6.4.0"
+headless_chrome = { version = "1.0.20", features = ["fetch"] }
+indicatif = "0.18.3"
+log = "0.4.29"
+pdf-extract = "0.10.0"
+readabilityrs = "0.1.1"
+reqwest = { version = "0.13.1", default-features = false, features = ["rustls", "gzip", "brotli", "deflate"] }
+rodio = { version = "0.21.1", default-features = false, features = ["mp3", "mp4", "wav", "symphonia-pcm"] }
+serde = { version = "1.0.228", features = ["derive"] }
+tokio = { version = "1.49.0", features = ["full"] }
+tree_magic_mini = "3.2.2"
+uuid = { version = "1.20.0", features = ["v4"] }
+validator = { version = "0.20.0", features = ["derive"] }
+which = "8.0.0"
+whisper-rs = "0.15.1"
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+codegen-units = 1
+lto = true
